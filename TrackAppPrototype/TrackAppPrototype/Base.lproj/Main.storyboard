@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="track.png" translatesAutoresizingMaskIntoConstraints="NO" id="ItD-XJ-dQR">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="trackTwo.png" translatesAutoresizingMaskIntoConstraints="NO" id="ItD-XJ-dQR">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sdR-to-iHo">
@@ -33,7 +33,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="y1G-c7-FOn" kind="push" id="Tcv-Oi-gvA"/>
+                                    <segue destination="y1G-c7-FOn" kind="modal" modalTransitionStyle="partialCurl" id="Tcv-Oi-gvA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -78,9 +78,6 @@
                                     <segue destination="QmF-Km-wgc" kind="push" id="OkR-cO-NDq"/>
                                 </connections>
                             </button>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="MvN-cm-nSF">
-                                <rect key="frame" x="28" y="158" width="348" height="301"/>
-                            </mapView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Initial Map View that shows current location of logged in user and surrounding poi and photopins" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dbd-SD-4ga">
                                 <rect key="frame" x="87" y="10" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -182,6 +179,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="track.png" width="1500" height="2670"/>
+        <image name="trackTwo.png" width="1500" height="2670"/>
     </resources>
 </document>

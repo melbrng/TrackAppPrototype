@@ -15,6 +15,7 @@
 		431D0E771D08AC950016771F /* TrackAppPrototypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431D0E761D08AC950016771F /* TrackAppPrototypeTests.swift */; };
 		431D0E821D08AC950016771F /* TrackAppPrototypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431D0E811D08AC950016771F /* TrackAppPrototypeUITests.swift */; };
 		431D0E921D08D73F0016771F /* track.png in Resources */ = {isa = PBXBuildFile; fileRef = 431D0E911D08D73F0016771F /* track.png */; };
+		431D0E941D09ABCB0016771F /* trackTwo.png in Resources */ = {isa = PBXBuildFile; fileRef = 431D0E931D09ABCB0016771F /* trackTwo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		431D0E811D08AC950016771F /* TrackAppPrototypeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackAppPrototypeUITests.swift; sourceTree = "<group>"; };
 		431D0E831D08AC950016771F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		431D0E911D08D73F0016771F /* track.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = track.png; sourceTree = "<group>"; };
+		431D0E931D09ABCB0016771F /* trackTwo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trackTwo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				431D0E6A1D08AC940016771F /* LaunchScreen.storyboard */,
 				431D0E6D1D08AC940016771F /* Info.plist */,
 				431D0E911D08D73F0016771F /* track.png */,
+				431D0E931D09ABCB0016771F /* trackTwo.png */,
 			);
 			path = TrackAppPrototype;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				431D0E6C1D08AC940016771F /* LaunchScreen.storyboard in Resources */,
+				431D0E941D09ABCB0016771F /* trackTwo.png in Resources */,
 				431D0E921D08D73F0016771F /* track.png in Resources */,
 				431D0E691D08AC940016771F /* Assets.xcassets in Resources */,
 				431D0E671D08AC940016771F /* Main.storyboard in Resources */,
@@ -486,6 +490,7 @@
 				431D0E881D08AC950016771F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		431D0E891D08AC950016771F /* Build configuration list for PBXNativeTarget "TrackAppPrototypeTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +499,7 @@
 				431D0E8B1D08AC950016771F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		431D0E8C1D08AC950016771F /* Build configuration list for PBXNativeTarget "TrackAppPrototypeUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +508,7 @@
 				431D0E8E1D08AC950016771F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
