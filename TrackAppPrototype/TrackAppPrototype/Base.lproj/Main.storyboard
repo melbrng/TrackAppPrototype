@@ -1,124 +1,44 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="HPz-yi-TOQ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrackAppPrototype" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="trackTwo.png" translatesAutoresizingMaskIntoConstraints="NO" id="ItD-XJ-dQR">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                            </imageView>
-                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sdR-to-iHo">
-                                <rect key="frame" x="149" y="634" width="116" height="88"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Login">
-                                            <attributes>
-                                                <color key="NSColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                <font key="NSFont" size="41" name="HelveticaNeue-Thin"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <segue destination="7P9-OA-eLh" kind="modal" id="8rG-GM-ewZ"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-781" y="-98"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="dz2-MJ-7fL">
-            <objects>
-                <viewController id="7P9-OA-eLh" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="v7R-gc-edI"/>
-                        <viewControllerLayoutGuide type="bottom" id="khH-iT-iS4"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="QKd-2G-j5h">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="trackTwoLogin.png" translatesAutoresizingMaskIntoConstraints="NO" id="sG1-ff-lof">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Gb6-gM-akV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-240" y="-98"/>
-        </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="P7q-WH-p4u">
             <objects>
-                <viewController id="y1G-c7-FOn" sceneMemberID="viewController">
+                <viewController id="y1G-c7-FOn" customClass="MapViewController" customModule="TrackAppPrototype" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="raK-c2-5Jg"/>
                         <viewControllerLayoutGuide type="bottom" id="T7C-sY-epu"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="MDr-0Y-BJx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9j-T1-7vY">
-                                <rect key="frame" x="20" y="559" width="116" height="95"/>
-                                <state key="normal" title="Photo"/>
-                                <connections>
-                                    <segue destination="VLs-iM-MMy" kind="push" id="BNW-oh-XER"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcB-GL-s4V">
-                                <rect key="frame" x="144" y="559" width="116" height="95"/>
-                                <state key="normal" title="Track"/>
-                                <connections>
-                                    <segue destination="Cdh-5G-c66" kind="push" id="MW3-sX-Him"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8n-2M-3LK">
-                                <rect key="frame" x="278" y="559" width="116" height="95"/>
-                                <state key="normal" title="Share"/>
-                                <connections>
-                                    <segue destination="QmF-Km-wgc" kind="push" id="OkR-cO-NDq"/>
-                                </connections>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Initial Map View that shows current location of logged in user and surrounding poi and photopins" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dbd-SD-4ga">
-                                <rect key="frame" x="87" y="10" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="BF6-2H-BQl">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="MxC-fE-cv5">
-                        <nil key="title"/>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="gJ7-4f-zbr">
+                        <barButtonItem key="leftBarButtonItem" title="track" id="mgr-6X-yCQ">
+                            <connections>
+                                <action selector="trackLocation:" destination="y1G-c7-FOn" id="vZF-e8-Mad"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="mapView" destination="BF6-2H-BQl" id="n7u-Hz-tIO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Wf-j0-wjz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="365" y="-98"/>
+            <point key="canvasLocation" x="127" y="-212"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="O4D-kV-vG6">
@@ -129,13 +49,13 @@
                         <viewControllerLayoutGuide type="bottom" id="vd7-dK-6tb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="m2W-4Y-V94">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Share photo on FB, Twitter etc.." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5aZ-hl-Cyb">
-                                <rect key="frame" x="86" y="88" width="242" height="21"/>
+                                <rect key="frame" x="39" y="53" width="242" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -145,26 +65,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A5q-LY-j8N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="935" y="-98"/>
+            <point key="canvasLocation" x="-37" y="1577"/>
         </scene>
-        <!--View Controller-->
+        <!--Photo View Controller-->
         <scene sceneID="lRJ-UL-GO1">
             <objects>
-                <viewController id="VLs-iM-MMy" sceneMemberID="viewController">
+                <viewController id="VLs-iM-MMy" customClass="PhotoViewController" customModule="TrackAppPrototype" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5Zg-fM-PEm"/>
                         <viewControllerLayoutGuide type="bottom" id="p4N-Tn-5eC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsH-OV-SqV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Take a photo and set its location and description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GcN-ah-5yB">
-                                <rect key="frame" x="22" y="67" width="370" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="27W-pf-tnd">
+                                <rect key="frame" x="0.0" y="64" width="320" height="374"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -172,7 +89,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ISM-p5-N7D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-310" y="853"/>
+            <point key="canvasLocation" x="-197" y="485"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="skf-Lr-H6i">
@@ -183,13 +100,13 @@
                         <viewControllerLayoutGuide type="bottom" id="vgT-ND-eh9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="E5K-lJ-WRA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Check in with iCloud with new photo and location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KU0-sO-yNd">
-                                <rect key="frame" x="20" y="62" width="376" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Take a new photo and set its location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KU0-sO-yNd">
+                                <rect key="frame" x="19" y="61" width="283" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -199,11 +116,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o5M-nb-OXz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="263" y="853"/>
+            <point key="canvasLocation" x="-739" y="485"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QPT-ci-XvP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HPz-yi-TOQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0xx-2a-unb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="y1G-c7-FOn" kind="relationship" relationship="rootViewController" id="dUX-kt-s1e"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FWT-Mg-Mqq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-372" y="-212"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="trackTwo.png" width="1500" height="2670"/>
-        <image name="trackTwoLogin.png" width="1500" height="2670"/>
-    </resources>
 </document>

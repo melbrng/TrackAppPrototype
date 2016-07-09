@@ -17,6 +17,12 @@
 		431D0E921D08D73F0016771F /* track.png in Resources */ = {isa = PBXBuildFile; fileRef = 431D0E911D08D73F0016771F /* track.png */; };
 		431D0E941D09ABCB0016771F /* trackTwo.png in Resources */ = {isa = PBXBuildFile; fileRef = 431D0E931D09ABCB0016771F /* trackTwo.png */; };
 		431D0E9A1D09BAE50016771F /* trackTwoLogin.png in Resources */ = {isa = PBXBuildFile; fileRef = 431D0E991D09BAE50016771F /* trackTwoLogin.png */; };
+		4369DE051D3182180020EBC7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4369DE041D3182180020EBC7 /* MapKit.framework */; };
+		4369DE071D31823B0020EBC7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4369DE061D31823B0020EBC7 /* CoreGraphics.framework */; };
+		4369DE091D3182810020EBC7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4369DE081D3182810020EBC7 /* MapViewController.swift */; };
+		4369DE0D1D3182DB0020EBC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4369DE0C1D3182DB0020EBC7 /* Foundation.framework */; };
+		4369DE0F1D31860B0020EBC7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4369DE0E1D31860B0020EBC7 /* CoreLocation.framework */; };
+		4369DE111D31A9320020EBC7 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4369DE101D31A9320020EBC7 /* PhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,12 @@
 		431D0E911D08D73F0016771F /* track.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = track.png; sourceTree = "<group>"; };
 		431D0E931D09ABCB0016771F /* trackTwo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trackTwo.png; sourceTree = "<group>"; };
 		431D0E991D09BAE50016771F /* trackTwoLogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trackTwoLogin.png; sourceTree = "<group>"; };
+		4369DE041D3182180020EBC7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4369DE061D31823B0020EBC7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4369DE081D3182810020EBC7 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		4369DE0C1D3182DB0020EBC7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4369DE0E1D31860B0020EBC7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4369DE101D31A9320020EBC7 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4369DE0F1D31860B0020EBC7 /* CoreLocation.framework in Frameworks */,
+				4369DE0D1D3182DB0020EBC7 /* Foundation.framework in Frameworks */,
+				4369DE071D31823B0020EBC7 /* CoreGraphics.framework in Frameworks */,
+				4369DE051D3182180020EBC7 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +99,10 @@
 		431D0E551D08AC940016771F = {
 			isa = PBXGroup;
 			children = (
+				4369DE0E1D31860B0020EBC7 /* CoreLocation.framework */,
+				4369DE0C1D3182DB0020EBC7 /* Foundation.framework */,
+				4369DE061D31823B0020EBC7 /* CoreGraphics.framework */,
+				4369DE041D3182180020EBC7 /* MapKit.framework */,
 				431D0E601D08AC940016771F /* TrackAppPrototype */,
 				431D0E751D08AC950016771F /* TrackAppPrototypeTests */,
 				431D0E801D08AC950016771F /* TrackAppPrototypeUITests */,
@@ -104,14 +124,12 @@
 			isa = PBXGroup;
 			children = (
 				431D0E611D08AC940016771F /* AppDelegate.swift */,
-				431D0E631D08AC940016771F /* ViewController.swift */,
 				431D0E651D08AC940016771F /* Main.storyboard */,
 				431D0E681D08AC940016771F /* Assets.xcassets */,
 				431D0E6A1D08AC940016771F /* LaunchScreen.storyboard */,
 				431D0E6D1D08AC940016771F /* Info.plist */,
-				431D0E911D08D73F0016771F /* track.png */,
-				431D0E931D09ABCB0016771F /* trackTwo.png */,
-				431D0E991D09BAE50016771F /* trackTwoLogin.png */,
+				4369DE0A1D31828E0020EBC7 /* Images */,
+				4369DE0B1D3182A10020EBC7 /* Controller */,
 			);
 			path = TrackAppPrototype;
 			sourceTree = "<group>";
@@ -132,6 +150,26 @@
 				431D0E831D08AC950016771F /* Info.plist */,
 			);
 			path = TrackAppPrototypeUITests;
+			sourceTree = "<group>";
+		};
+		4369DE0A1D31828E0020EBC7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				431D0E911D08D73F0016771F /* track.png */,
+				431D0E931D09ABCB0016771F /* trackTwo.png */,
+				431D0E991D09BAE50016771F /* trackTwoLogin.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		4369DE0B1D3182A10020EBC7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				431D0E631D08AC940016771F /* ViewController.swift */,
+				4369DE081D3182810020EBC7 /* MapViewController.swift */,
+				4369DE101D31A9320020EBC7 /* PhotoViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +307,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				431D0E641D08AC940016771F /* ViewController.swift in Sources */,
+				4369DE111D31A9320020EBC7 /* PhotoViewController.swift in Sources */,
+				4369DE091D3182810020EBC7 /* MapViewController.swift in Sources */,
 				431D0E621D08AC940016771F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
