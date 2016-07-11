@@ -23,6 +23,7 @@
 		4369DE0D1D3182DB0020EBC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4369DE0C1D3182DB0020EBC7 /* Foundation.framework */; };
 		4369DE0F1D31860B0020EBC7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4369DE0E1D31860B0020EBC7 /* CoreLocation.framework */; };
 		4369DE111D31A9320020EBC7 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4369DE101D31A9320020EBC7 /* PhotoViewController.swift */; };
+		4369DE131D32D49B0020EBC7 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4369DE121D32D49B0020EBC7 /* Track.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		4369DE0C1D3182DB0020EBC7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4369DE0E1D31860B0020EBC7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		4369DE101D31A9320020EBC7 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		4369DE121D32D49B0020EBC7 /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				431D0E6D1D08AC940016771F /* Info.plist */,
 				4369DE0A1D31828E0020EBC7 /* Images */,
 				4369DE0B1D3182A10020EBC7 /* Controller */,
+				4369DE121D32D49B0020EBC7 /* Track.swift */,
 			);
 			path = TrackAppPrototype;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				431D0E641D08AC940016771F /* ViewController.swift in Sources */,
+				4369DE131D32D49B0020EBC7 /* Track.swift in Sources */,
 				4369DE111D31A9320020EBC7 /* PhotoViewController.swift in Sources */,
 				4369DE091D3182810020EBC7 /* MapViewController.swift in Sources */,
 				431D0E621D08AC940016771F /* AppDelegate.swift in Sources */,

@@ -10,12 +10,16 @@ import UIKit
 import MapKit
 
 
-class MapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDelegate,UIImagePickerControllerDelegate {
+class MapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
  
 
     let locationManager = CLLocationManager()
+    let cameraPicker = UIImagePickerController()
+    let photoPicker = UIImagePickerController()
+    
+    let melPointAnnotation = MKPointAnnotation()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,11 +35,9 @@ class MapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
         mapView.showsUserLocation = true
         mapView.showsPointsOfInterest = true
         
-        //load locations which creates an array of annotations
-        
-        //set the mapView's annotations
-        
-        //but I also want to include POI -- Core Location?
+        cameraPicker.delegate = self
+        photoPicker.delegate = self
+
     }
     
     // MARK : Map User location
@@ -44,7 +46,7 @@ class MapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
         let region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 800, 800)
         mapView .setRegion(region, animated: true)
         
-        let melPointAnnotation = MKPointAnnotation()
+        
         melPointAnnotation.coordinate = userLocation.coordinate
         melPointAnnotation.title = "Where is Mel?"
         melPointAnnotation.subtitle = "Mel is here!"
@@ -52,7 +54,46 @@ class MapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
         mapView.addAnnotation(melPointAnnotation)
     }
     
-    // MARK : Track
+    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+        // Don't want to show a custom image if the annotation is the user's location.
+        guard !annotation.isKindOfClass(MKUserLocation) else {
+            return nil
+        }
+        
+        let annotationIdentifier = "AnnotationIdentifier"
+        
+        var annotationView: MKAnnotationView?
+        if let dequeuedAnnotationView = mapView.dequeueReusableAnnotationViewWithIdentifier(annotationIdentifier) {
+            annotationView = dequeuedAnnotationView
+            annotationView?.annotation = annotation
+        }
+        else {
+            let av = MKAnnotationView(annotation: annotation, reuseIdentifier: annotationIdentifier)
+            av.rightCalloutAccessoryView = UIButton(type: .DetailDisclosure)
+            annotationView = av
+        }
+        
+        if let annotationView = annotationView {
+            // Configure your annotation view here
+            annotationView.canShowCallout = true
+            annotationView.image = UIImage(named: "yourImage")
+        }
+        
+        return annotationView
+    }
+    
+    func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+
+        //let annotation = view.annotation
+        
+        let photoViewController = PhotoViewController()
+        presentViewController(photoViewController, animated: true, completion: nil)
+        
+    }
+    
+
+    
+    // MARK : Track by Photo
     @IBAction func trackLocation(sender: UIBarButtonItem) {
 
         //alert controller with image picker , camera , cancel actions
@@ -62,9 +103,8 @@ class MapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
         let photoAction = UIAlertAction(title: "Photo Library", style: .Default, handler: {
             action in
             
-            let picker = UIImagePickerController()
-            picker.sourceType = .PhotoLibrary
-            self.presentViewController(picker, animated: true, completion: nil)
+            self.photoPicker.sourceType = .PhotoLibrary
+            self.presentViewController(self.photoPicker, animated: true, completion: nil)
         })
         
         //camera action
@@ -73,11 +113,9 @@ class MapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
             
             //check to see if camera is available (not available on simulator) and set the sourceType
             let isCameraAvailable = UIImagePickerController .isCameraDeviceAvailable(UIImagePickerControllerCameraDevice.Front)
-            let cameraPicker = UIImagePickerController()
             
-            cameraPicker.sourceType = (isCameraAvailable) ? .Camera : .PhotoLibrary
-            
-            self.presentViewController(cameraPicker, animated: true, completion: nil)
+            self.cameraPicker.sourceType = (isCameraAvailable) ? .Camera : .PhotoLibrary
+            self.presentViewController(self.cameraPicker, animated: true, completion: nil)
         })
         
         //cancel action
@@ -90,5 +128,17 @@ class MapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
         presentViewController(alertController, animated: true, completion: nil)
 
     }
+    
+    // MARK : ImagePicker Delegates
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+        
+        let track = Track()
+        track.annotation = melPointAnnotation
+        track.image = image
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 }

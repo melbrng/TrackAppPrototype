@@ -89,34 +89,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ISM-p5-N7D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-197" y="485"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="skf-Lr-H6i">
-            <objects>
-                <viewController id="Cdh-5G-c66" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="blf-ro-D8I"/>
-                        <viewControllerLayoutGuide type="bottom" id="vgT-ND-eh9"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="E5K-lJ-WRA">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Take a new photo and set its location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KU0-sO-yNd">
-                                <rect key="frame" x="19" y="61" width="283" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="f01-7L-Pcx"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="o5M-nb-OXz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-739" y="485"/>
+            <point key="canvasLocation" x="215" y="421"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QPT-ci-XvP">
